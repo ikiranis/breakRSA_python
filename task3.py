@@ -7,12 +7,12 @@ e = 65537
 
 phi_n = totient(n)
 
-print(phi_n)
+print("φ(n) = ", phi_n)
 
 d = inverse(e, int(phi_n))
 
-print(d)
+print("d = ", d)
 
 m = pow(c, d, n)
 
-print(long_to_bytes(m))
+print("Μήνυμα: ", long_to_bytes(m).decode())

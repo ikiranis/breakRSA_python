@@ -7,8 +7,8 @@ e = 1070699708927834317982688521006082714746340949352351077743138768577167144285
 
 d = owiener.attack(e, n)
 
-print(d)
+print("d = ", d)
 
 m = pow(c, d, n)
 
-print(long_to_bytes(m))
+print("Μήνυμα: ", long_to_bytes(m).decode())
